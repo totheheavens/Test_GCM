@@ -3,7 +3,7 @@ package com.fateindestiny.test_gcm;
 /**
  * Create By
  *
- * @author KKM on 2015-10-15.
+ * @author FateInDestiny on 2015-10-15.
  */
 public class QuickstartPreferences {
     public static final String REGISTRATION_COMPLETE = "registrationComplete";

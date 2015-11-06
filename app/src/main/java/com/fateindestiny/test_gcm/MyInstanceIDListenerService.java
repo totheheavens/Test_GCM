@@ -7,7 +7,7 @@ import com.google.android.gms.iid.InstanceIDListenerService;
 /**
  * Create By
  *
- * @author KKM on 2015-10-15.
+ * @author FateInDestiny on 2015-10-15.
  */
 public class MyInstanceIDListenerService extends InstanceIDListenerService {
     @Override

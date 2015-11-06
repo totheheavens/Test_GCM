@@ -10,7 +10,7 @@ import com.google.android.gms.gcm.GcmListenerService;
 /**
  * Create By
  *
- * @author KKM on 2015-10-15.
+ * @author FateInDestiny on 2015-10-15.
  */
 public class FIDGCMListenerService extends GcmListenerService {
 
