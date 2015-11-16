@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
 
+        <!--GCM 관련 BroadcastReceiver-->
         <receiver
             android:name="com.google.android.gms.gcm.GcmReceiver"
             android:exported="true"
@@ -26,6 +27,7 @@
             </intent-filter>
         </receiver>
 
+        <!--Instance ID Listener Service-->
         <service
             android:name=".MyInstanceIDListenerService"
             android:exported="false">
@@ -34,10 +36,12 @@
             </intent-filter>
         </service>
 
+        <!--GCM 등록 IntentService-->
         <service
             android:name=".GCMRegistrationIntentService"
             android:exported="false"/>
 
+        <!--GCM 메시지 Service-->
         <service
             android:name=".FIDGCMListenerService"
             android:exported="false">

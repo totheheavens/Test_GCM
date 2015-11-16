@@ -32,6 +32,8 @@ public class GCMRegistrationIntentService extends IntentService {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        // Local BroadcastReceiver로 해당 등록 완료 및 InstanceID를 전달.
         Intent tokenGeneratingIntent = new Intent(QuickstartPreferences.REGISTRATION_COMPLETE);
         tokenGeneratingIntent.putExtra(QuickstartPreferences.INSTANCE_ID_TOKEN, token);
 

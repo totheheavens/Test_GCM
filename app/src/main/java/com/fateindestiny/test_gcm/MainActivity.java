@@ -36,10 +36,12 @@ public class MainActivity extends AppCompatActivity {
             String action = intent.getAction();
 
             if (action.equals(QuickstartPreferences.REGISTRATION_COMPLETE)) {
+                // GCM 등록 성공 및 Instance ID 생성 성공
                 Toast.makeText(MainActivity.this, "GCM Registration Complete", Toast.LENGTH_SHORT).show();
                 String token = intent.getStringExtra(QuickstartPreferences.INSTANCE_ID_TOKEN);
                 mTxtInstanceId.setText(token);
             } else if (action.equals(QuickstartPreferences.GCM_MESSAGE_RECEIVE)) {
+                // GCM 메시지 Recevie
                 String message = intent.getStringExtra(QuickstartPreferences.GCM_MESSAGE);
                 mTxtReceiveMessage.setText(message);
             }

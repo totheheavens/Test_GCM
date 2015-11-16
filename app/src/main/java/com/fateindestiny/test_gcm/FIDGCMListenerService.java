@@ -16,12 +16,9 @@ public class FIDGCMListenerService extends GcmListenerService {
 
     @Override
     public void onMessageReceived(String from, Bundle data) {
-        Log.d(MainActivity.LOG_TAG, this.getClass().getName() + " :: onMessageReceived :: from=" + from + " :: data=" + data.toString());
-
         String message = data.getString("message");
         int meesageCode = data.getInt("messageCode");
 
-        Log.d(MainActivity.LOG_TAG, this.getClass().getName() + " :: onMessageReceived :: meesageCode=" + meesageCode);
         Intent intent = new Intent(QuickstartPreferences.GCM_MESSAGE_RECEIVE);
         intent.putExtra(QuickstartPreferences.GCM_MESSAGE, message);
         LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
