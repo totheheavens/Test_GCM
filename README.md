@@ -1,6 +1,6 @@
 # Test_GCM
 
-This project needs google-service.json file.
+This project needs 'google-service.json' file.
 
 Please Download Google Developer Site.
 
